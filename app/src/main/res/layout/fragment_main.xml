@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/default_margin">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/default_margin"
+            android:gravity="center"
+            android:text="@string/auto_message_hint" />
+
+        <EditText
+            android:id="@+id/auto_message_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/default_margin" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/skype_button"
+                android:layout_width="@dimen/icon_size_standard"
+                android:layout_height="@dimen/icon_size_standard"
+                android:layout_marginEnd="@dimen/default_margin_small"
+                android:layout_marginRight="@dimen/default_margin_small"
+                android:background="?attr/selectableItemBackground"
+                android:src="@drawable/skype_business" />
+
+            <ImageButton
+                android:id="@+id/viber_button"
+                android:layout_width="@dimen/icon_size_standard"
+                android:layout_height="@dimen/icon_size_standard"
+                android:layout_marginLeft="@dimen/default_margin_small"
+                android:layout_marginStart="@dimen/default_margin_small"
+                android:background="?attr/selectableItemBackground"
+                android:src="@drawable/ic_viber" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MessengerAutoReply</string>
+    <string name="auto_message_hint">Enter the message that will be sent to reply your contacts in selected messengers</string>
+</resources>
