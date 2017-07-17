@@ -28,12 +28,12 @@ public class MainFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_main, null);
         MainActivity activity = (MainActivity) getActivity();
         if (activity == null) return view;
-        EditText autoMessage = view.findViewById(R.id.auto_message_edit_text);
-        ImageView skypeButton = view.findViewById(R.id.skype_button);
-        ImageView viberbutton = view.findViewById(R.id.viber_button);
-        RelativeLayout telegramButton = view.findViewById(R.id.telegram_link_add);
-        ImageView telegramIcon = telegramButton.findViewById(R.id.telegram_button_icon);
-        TextView telegramButtonText = view.findViewById(R.id.telegram_button_text);
+        EditText autoMessage = (EditText) view.findViewById(R.id.auto_message_edit_text);
+        ImageView skypeButton = (ImageView) view.findViewById(R.id.skype_button);
+        ImageView viberbutton = (ImageView) view.findViewById(R.id.viber_button);
+        RelativeLayout telegramButton = (RelativeLayout) view.findViewById(R.id.telegram_link_add);
+        ImageView telegramIcon = (ImageView) telegramButton.findViewById(R.id.telegram_button_icon);
+        TextView telegramButtonText = (TextView) view.findViewById(R.id.telegram_button_text);
         skypeButton.setImageDrawable(ContextCompat.getDrawable(activity, activity.isSkypeLoggedIn() ? R.drawable.ic_skype : R.drawable.ic_skype_disabled));
         viberbutton.setImageDrawable(ContextCompat.getDrawable(activity, activity.isViberLoggedIn() ? R.drawable.ic_viber : R.drawable.ic_viber_disabled));
         telegramIcon.setImageDrawable(ContextCompat.getDrawable(activity, activity.isTelegramAttached() ? R.drawable.ic_telegram : R.drawable.ic_telegram_disabled));

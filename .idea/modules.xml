@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MessengerAutoReply.iml" filepath="$PROJECT_DIR$/MessengerAutoReply.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TelegramAutoDirect.iml" filepath="$PROJECT_DIR$/TelegramAutoDirect.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
