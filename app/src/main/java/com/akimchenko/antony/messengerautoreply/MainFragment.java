@@ -30,12 +30,12 @@ public class MainFragment extends Fragment {
         if (activity == null) return view;
         EditText autoMessage = (EditText) view.findViewById(R.id.auto_message_edit_text);
         ImageView skypeButton = (ImageView) view.findViewById(R.id.skype_button);
-        ImageView viberbutton = (ImageView) view.findViewById(R.id.viber_button);
+        ImageView viberButton = (ImageView) view.findViewById(R.id.viber_button);
         RelativeLayout telegramButton = (RelativeLayout) view.findViewById(R.id.telegram_link_add);
         ImageView telegramIcon = (ImageView) telegramButton.findViewById(R.id.telegram_button_icon);
         TextView telegramButtonText = (TextView) view.findViewById(R.id.telegram_button_text);
         skypeButton.setImageDrawable(ContextCompat.getDrawable(activity, activity.isSkypeLoggedIn() ? R.drawable.ic_skype : R.drawable.ic_skype_disabled));
-        viberbutton.setImageDrawable(ContextCompat.getDrawable(activity, activity.isViberLoggedIn() ? R.drawable.ic_viber : R.drawable.ic_viber_disabled));
+        viberButton.setImageDrawable(ContextCompat.getDrawable(activity, activity.isViberLoggedIn() ? R.drawable.ic_viber : R.drawable.ic_viber_disabled));
         telegramIcon.setImageDrawable(ContextCompat.getDrawable(activity, activity.isTelegramAttached() ? R.drawable.ic_telegram : R.drawable.ic_telegram_disabled));
         telegramButtonText.setText(activity.getResources().getString(activity.isTelegramAttached() ? R.string.telegram_link_attached : R.string.telegram_link_not_attached));
         telegramButtonText.setTextColor(ContextCompat.getColor(activity, activity.isTelegramAttached() ? R.color.colorAccent : R.color.greyInactive));
